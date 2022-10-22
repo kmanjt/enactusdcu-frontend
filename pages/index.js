@@ -2,12 +2,13 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Hero from '../components/hero'
 import Nav from '../components/nav'
-import Project_Carousel from '../components/projects'
+import { SliderData } from '../components/projectData'
+import Slider from '../components/Slider'
 
 
 export default function Home() {
   return (
-    <div className="h-screen bg-gradient-to-b from-amber-100 to-amber-300">
+    <div className="bg-gradient-to-b from-amber-100 to-amber-300">
       <Head>
         <title>Enactus DCU</title>
         <meta name="description" content="Enactus DCU main website!" />
@@ -15,7 +16,7 @@ export default function Home() {
       </Head>
       <Nav/>
       <Hero heading='Enactus DCU' message='Enactus DCU is a student led social entrepreneurship society.'/>
-      <Project_Carousel/>
+      <Slider slides={SliderData} />
     </div>
   )
 }

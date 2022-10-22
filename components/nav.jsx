@@ -5,7 +5,7 @@ import Image from 'next/image'
 import logo from '../public/logo.png'
 
 const navigation = [
-  { name: 'Projects', href: '#', current: true },
+  { name: 'Projects', href: '#projects', current: true },
   { name: 'Our Team', href: '#', current: false },
   { name: 'Contact', href: '#', current: false },
 ]
@@ -19,7 +19,7 @@ export default function Nav() {
     <Disclosure as="nav" className="bg-amber-100">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div className="  mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
@@ -32,6 +32,8 @@ export default function Nav() {
                   )}
                 </Disclosure.Button>
               </div>
+
+
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                 <Image
@@ -67,7 +69,7 @@ export default function Nav() {
                   type="button"
                   className="rounded-full bg-amber-400 p-2 text-zinc-900 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                 >
-                  <a href="https://dcuclubsandsocs.ie/society/enactus"  target="blank"><p class="font-mono ...">Join Us!</p></a>
+                  <a href="https://dcuclubsandsocs.ie/society/enactus"  target="blank"><p className="font-mono ...">Join Us!</p></a>
                 </button>           
               </div>
             </div>
