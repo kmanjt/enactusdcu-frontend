@@ -15,7 +15,10 @@ export default function Home() {
       </Head>
       <Nav/>
       <body class="h-screen bg-gradient-to-b from-amber-100 to-amber-300">
-        <Project_Carousel/>
+        
+        <div className="1xl:container 1xl:mx-auto 1xl:px-0 py-3 px-10">
+          <Project_Carousel/>
+        </div>
       </body>
     </div>
   )
