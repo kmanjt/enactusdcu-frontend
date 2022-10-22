@@ -111,3 +111,36 @@ export const CarouselData = [
               </div>
       }
 ]
+
+export const SliderData = [
+    {
+        image: 'enactus-team.png',
+        name: 'Vocalise',
+        url: 'http://vocalise.ie/',
+        description: 'Info on Vocalise'
+    },
+    {
+        image: 'team.jpeg',
+        name: 'Parking Protect',
+        url: 'http://vocalise.ie/',
+        description: 'Info on Parking Protect'
+    },
+    {
+        image: 'enactus-team.png',
+        name: 'Renu Ireland',
+        url: 'https://www.renu-ireland.com/',
+        description: 'Info on Renu'
+    },
+    {
+        image: 'team.jpeg',
+        name: 'Food Planner',
+        url: 'http://vocalise.ie/',
+        description: 'Info on Food Planner'
+    },
+    {
+        image: 'enactus-team.png',
+        name: 'Buckle Up',
+        url: 'http://vocalise.ie/',
+        description: 'Info on Buckle Up'
+    },
+]
