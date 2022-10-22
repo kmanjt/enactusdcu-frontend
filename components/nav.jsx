@@ -37,7 +37,7 @@ export default function Nav() {
  
 
   return (
-    <Disclosure as="nav" style={{backgroundColor: `${colour}`}} className="bg-transparent sticky top-0 ">
+    <Disclosure as="nav" style={{backgroundColor: `${colour}`}} className="bg-transparent fixed left-0 w-full z-10 top-0 ">
       {({ open }) => (
         <>
           <div style={{backgroundColor: `${colour}`}} className=" bg-transparent mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">

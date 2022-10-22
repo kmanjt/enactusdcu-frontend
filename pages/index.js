@@ -14,7 +14,6 @@ export default function Home() {
         <meta name="description" content="Enactus DCU main website!" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Nav/>
       <Hero heading='Enactus DCU' message='Enactus DCU is a student led social entrepreneurship society.'/>
       <Slider slides={SliderData} />
     </div>
