@@ -7,7 +7,7 @@ import Project_Carousel from '../components/projects'
 
 export default function Home() {
   return (
-    <div className="h-screen bg-gradient-to-b from-amber-100 to-amber-300">
+    <div className="bg-gradient-to-b from-amber-100 to-amber-300">
       <Head>
         <title>Enactus DCU</title>
         <meta name="description" content="Enactus DCU main website!" />

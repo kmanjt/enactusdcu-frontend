@@ -10,4 +10,6 @@ html {
 
 .custom-img {
   background-image: url("../assets/enactus-team.png");
+  width: auto;
+  height: 100vh;
 }
