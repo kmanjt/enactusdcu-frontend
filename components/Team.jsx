@@ -18,7 +18,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Team = () => {
   return (
-    <div id="team" className="max-w-[620px] mx-auto text-center py-24">
+    <div id="team" className="w-full p-24 mx-auto text-center py-24">
       <p className="mt-2 text-3xl font-bold leading-8 tracking-tight  pb-10 text-gray-900 sm:text-4xl">
         The Enactus DCU Team
       </p>
@@ -32,12 +32,13 @@ const Team = () => {
                 width={"4000w"}
                 height={"6000h"}
                 layout="responsive"
+                className="rounded"
               />
               {/* Overlay */}
               <a href={team.url} target="blank">
                 <div className="flex justify-center w-full h-full items-center absolute top-0 left-0 right-0 bottom-0 hover:bg-black/50 group">
-                  <p className="text-gray-300 hidden group-hover:block text-[10px]">
-                    <FaLinkedin className="mx-auto" size={20} />
+                  <p className="text-gray-300 hidden group-hover:block text-s">
+                    <FaLinkedin className="mx-auto" size={30} />
                     <br />
                     {team.name}
                     <br />
