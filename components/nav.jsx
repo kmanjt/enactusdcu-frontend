@@ -24,7 +24,7 @@ export default function Nav() {
 
     useEffect(() => {
       const changeColour = () => {
-        if(window.scrollY >= 420){
+        if(window.scrollY >= 520){
           setColour('#FEF3C7');
         }
         else{
@@ -72,7 +72,7 @@ export default function Nav() {
                         href={item.href}
                         className={classNames(
                           item.current ? 'bg-amber-400 text-white' : 'text-zinc-800 hover:bg-amber-300 hover:text-white',
-                          'px-3 py-2 rounded-md text-sm font-medium'
+                          'px-5 py-2 rounded-md text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
