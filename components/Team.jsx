@@ -12,24 +12,42 @@ import SO from "../public/committee/Klara.png";
 import FYR from "../public/committee/Stephen.png";
 import SPR from "../public/committee/Lucas.png";
 import TeamImg from "./TeamImg";
+import Image from "next/image";
+import { TeamData } from "./TeamData";
+import { FaLinkedin } from "react-icons/fa";
 
 const Team = () => {
   return (
     <div id="team" className="max-w-[620px] mx-auto text-center py-24">
-      <h1 className="text-2xl font-bold pb-4">The Enactus DCU Team</h1>
+      <p className="mt-2 text-3xl font-bold leading-8 tracking-tight  pb-10 text-gray-900 sm:text-4xl">
+        The Enactus DCU Team
+      </p>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 p-4">
-        <TeamImg teamImg={Chairperson} />
-        <TeamImg teamImg={TeamL1} />
-        <TeamImg teamImg={TeamL2} />
-        <TeamImg teamImg={Secretary} />
-        <TeamImg teamImg={Treasurer} />
-        <TeamImg teamImg={PRO} />
-        <TeamImg teamImg={ABLO} />
-        <TeamImg teamImg={SO1} />
-        <TeamImg teamImg={SO2} />
-        <TeamImg teamImg={SO} />
-        <TeamImg teamImg={FYR} />
-        <TeamImg teamImg={SPR} />
+        {TeamData.map((team, index) => {
+          return (
+            <div key={index} className="relative">
+              <Image
+                src={team.image}
+                alt="/"
+                width={"4000w"}
+                height={"6000h"}
+                layout="responsive"
+              />
+              {/* Overlay */}
+              <a href={team.url} target="blank">
+                <div className="flex justify-center w-full h-full items-center absolute top-0 left-0 right-0 bottom-0 hover:bg-black/50 group">
+                  <p className="text-gray-300 hidden group-hover:block text-[10px]">
+                    <FaLinkedin className="mx-auto" size={20} />
+                    <br />
+                    {team.name}
+                    <br />
+                    {team.role}
+                  </p>
+                </div>
+              </a>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
