@@ -8,7 +8,8 @@ const TeamImg = ({ teamImg }) => {
       <Image
         src={teamImg}
         alt="/"
-        className="w-full h-full"
+        width={"4000w"}
+        height={"6000h"}
         layout="responsive"
       />
       {/* Overlay */}
