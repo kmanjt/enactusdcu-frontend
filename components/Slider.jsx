@@ -19,8 +19,8 @@ const Slider = ({ slides }) => {
   }
 
   return (
-    <div id="projects" className="mx-auto">
-      <h1 className="text-2xl font-bold text-center">Projects</h1>
+    <div id="projects" className="mx-auto pt-[9rem] pb-10">
+      <h1 className="text-2xl font-bold text-center pb-10">Projects</h1>
       <div className="relative flex justify-center">
         {SliderData.map((slide, index) => {
           return (
@@ -32,23 +32,22 @@ const Slider = ({ slides }) => {
                   : "opacity-0"
               }
             >
-            
-
               <FaArrowCircleLeft
                 onClick={prevSlide}
-                className="absolute top-[50%] left-[30px] text-white/70 cursor-pointer select-none z-[2]"
+                className="absolute top-[50%] left-[120px] text-white/70 cursor-pointer select-none z-[2]"
                 size={50}
               />
 
               {index === current && (
-                <div className="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                <div className="max-w-sm bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
                 <a href={`${slide.url}`} target="blank">
                 <Image
                   src={`/${slide.image}`}
                   alt="/"
-                  width="720"
-                  height="300"
+                  width="1420w"
+                  height="1000h"
                   objectFit="cover"
+                  className="rounded"
                 />
                 </a>
                 <div className="p-5">
@@ -63,7 +62,7 @@ const Slider = ({ slides }) => {
 
               <FaArrowCircleRight
               onClick={nextSlide}
-                className="absolute top-[50%] right-[30px] text-white/70 cursor-pointer select-none z-[2]"
+                className="absolute top-[50%] right-[120px] text-white/70 cursor-pointer select-none z-[2]"
                 size={50}
               />
 
