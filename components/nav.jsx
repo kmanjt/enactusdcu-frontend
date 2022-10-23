@@ -5,9 +5,9 @@ import Image from "next/image";
 import logo from "../public/logo.png";
 
 const navigation = [
-  { name: "Projects", href: "#projects", current: true },
+  { name: "Projects", href: "#projects", current: false },
   { name: "Our Team", href: "#team", current: false },
-  { name: "Contact", href: "#", current: false },
+  { name: "Contact", href: "#contact", current: false },
 ];
 
 function classNames(...classes) {

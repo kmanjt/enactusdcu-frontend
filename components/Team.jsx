@@ -16,7 +16,7 @@ import TeamImg from "./TeamImg";
 const Team = () => {
   return (
     <div id="team" className="max-w-[620px] mx-auto text-center py-24">
-      <h1 className="text-2xl font-bold pb-4">The Enactus DCU Team</h1>
+      <p className="mt-2 text-3xl font-bold leading-8 tracking-tight  pb-10 text-gray-900 sm:text-4xl">The Enactus DCU Team</p>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 p-4">
         <TeamImg teamImg={Chairperson} />
         <TeamImg teamImg={TeamL1} />
