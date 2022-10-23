@@ -4,6 +4,7 @@ import Hero from '../components/hero'
 import Nav from '../components/nav'
 import { SliderData } from '../components/projectData'
 import Slider from '../components/Slider'
+import Team from '../components/Team'
 
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       </Head>
       <Hero heading='Enactus DCU' message='Enactus DCU is a student led social entrepreneurship society.'/>
       <Slider slides={SliderData} />
+      <Team/>
     </div>
   )
 }

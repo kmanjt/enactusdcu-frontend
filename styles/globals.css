@@ -9,7 +9,7 @@ html {
 }
 
 .custom-img {
-  background-image: url("../assets/enactus-team.png");
+  background-image: url("../public/enactus-team.png");
   width: auto;
   height: 100vh;
 }
