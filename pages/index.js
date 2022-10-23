@@ -8,14 +8,16 @@ import Slider from '../components/Slider'
 
 export default function Home() {
   return (
-    <div className="bg-gradient-to-b from-amber-100 to-amber-300">
+    <div >
       <Head>
         <title>Enactus DCU</title>
         <meta name="description" content="Enactus DCU main website!" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero heading='Enactus DCU' message='Enactus DCU is a student led social entrepreneurship society.'/>
+      <div  className="bg-gradient-to-b from-amber-100 to-amber-300">
       <Slider slides={SliderData} />
+      </div>
     </div>
   )
 }

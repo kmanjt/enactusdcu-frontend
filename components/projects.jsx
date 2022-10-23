@@ -55,12 +55,12 @@ export default function Project_Carousel()
     
     return(
         <div>
-        <div className="carousel my-12 mx-auto">
+        <div className="carousel my-12 mx-auto mb-10 pb-10">
             <div className="relative overflow-hidden">
-            <div className="flex justify-between absolute top left w-full h-full ">
+            <div className="flex justify-between absolute top left w-3 h-full ">
             <button
                 onClick={movePrev}
-                className="hover:bg-blue-900/75 text-white w-10 h-full text-center opacity-75 hover:opacity-100 disabled:opacity-25 disabled:cursor-not-allowed z-10 p-0 m-0 transition-all ease-in-out duration-300"
+                className="hover:bg-blue-900/75 text-white w-5 h-full text-center opacity-75 hover:opacity-100 disabled:opacity-25 disabled:cursor-not-allowed z-10 p-0 m-0 transition-all ease-in-out duration-300"
                 disabled={isDisabled('prev')}
             >
                 <svg
@@ -81,7 +81,7 @@ export default function Project_Carousel()
             </button>
             <button
                 onClick={moveNext}
-                className="hover:bg-blue-900/75 text-white w-10 h-full text-center opacity-75 hover:opacity-100 disabled:opacity-25 disabled:cursor-not-allowed z-10 p-0 m-0 transition-all ease-in-out duration-300"
+                className="hover:bg-blue-900/75 text-white w-5 h-full text-center opacity-75 hover:opacity-100 disabled:opacity-25 disabled:cursor-not-allowed z-10 p-0 m-0 transition-all ease-in-out duration-300"
                 disabled={isDisabled('next')}
             >
                 <svg
