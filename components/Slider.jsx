@@ -20,7 +20,7 @@ const Slider = ({ slides }) => {
 
   return (
     <div id="projects" className="mx-auto pt-[9rem] pb-10">
-      <h1 className="text-2xl font-bold text-center pb-10">Projects</h1>
+      <p className="mt-2 text-3xl font-bold leading-8 tracking-tight  pb-10 text-gray-900 sm:text-4xl text-center">Projects</p>
       <div className="relative flex justify-center">
         {SliderData.map((slide, index) => {
           return (
