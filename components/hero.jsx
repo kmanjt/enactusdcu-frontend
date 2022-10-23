@@ -11,9 +11,9 @@ const hero = ({heading, message}) => {
         <div className="py-5 pt-0">
                 <button
                   type="button"
-                  className="rounded-full bg-amber-400 p-2 text-zinc-900 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                  className="rounded-full bg-amber-400 p-3 text-zinc-900 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                 >
-                  <a href="https://dcuclubsandsocs.ie/society/enactus"  target="blank"><p className="font-mono ...">Join Us!</p></a>
+                  <a href="#projects"><p>Learn more!</p></a>
                 </button>           
               </div>
       </div>
