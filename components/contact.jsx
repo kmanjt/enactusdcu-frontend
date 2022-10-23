@@ -47,7 +47,7 @@ export default function Contact() {
             {features.map((feature) => (
               <div key={feature} className="relative">
                 <dt>
-                    <a href="{feature.link}" target="blank">
+                    <a href={feature.link} target="blank">
                   <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-indigo-500 text-white">
                     <feature.icon className="h-6 w-6" aria-hidden="true" />
                   </div>
