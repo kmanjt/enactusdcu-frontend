@@ -44,8 +44,8 @@ export default function Contact() {
 
         <div className="mt-10 mb-12 mx-auto items-center justify-center flex">
           <dl className="mx-auto space-y-10 md:grid md:grid-cols-2 md:gap-x-12 md:gap-y-12 md:space-y-0">
-            {features.map((feature) => (
-              <div key={feature} className="relative">
+            {features.map((feature, index) => (
+              <div key={index} className="relative">
                 <dt>
                     <a href={feature.link} target="blank">
                   <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-indigo-500 text-white">
