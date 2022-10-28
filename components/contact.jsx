@@ -38,7 +38,7 @@ export default function Contact() {
             Get in touch!
           </p>
           <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-            Curious to learn more find us on social media or send us an email!
+            Curious to learn more? Find us on social media or send us an email!
           </p>
         </div>
 
