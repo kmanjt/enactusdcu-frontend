@@ -21,14 +21,14 @@ const Slider = ({ slides }) => {
   return (
     <div id="projects" className="mx-auto pt-[9rem] pb-10">
       <p className="mt-2 text-3xl font-bold leading-8 tracking-tight  pb-10 text-gray-900 sm:text-4xl text-center">Projects</p>
-      <div className="relative flex justify-center">
+      <div className="relative flex justify-center slide">
         {SliderData.map((slide, index) => {
           return (
             <div
               key={index}
               className={
                 index === current
-                  ? "opacity-[1] ease-in duration-500"
+                  ? "opacity-[1] ease-in-out duration-300"
                   : "opacity-0"
               }
             >
@@ -36,10 +36,11 @@ const Slider = ({ slides }) => {
                 onClick={prevSlide}
                 className="absolute top-[50%] left-[120px] text-white/70 cursor-pointer select-none z-[2]"
                 size={50}
+                color="black"
               />
-
+              
               {index === current && (
-                <div className="max-w-sm bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+                <div className="max-w-md max-sm:max-w-sm bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
                 <a href={`${slide.url}`} target="blank">
                 <Image
                   src={`/${slide.image}`}
@@ -64,6 +65,7 @@ const Slider = ({ slides }) => {
               onClick={nextSlide}
                 className="absolute top-[50%] right-[120px] text-white/70 cursor-pointer select-none z-[2]"
                 size={50}
+                color="black"
               />
 
               </div>
