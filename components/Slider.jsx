@@ -40,7 +40,7 @@ const Slider = ({ slides }) => {
               />
               
               {index === current && (
-                <div className="max-w-md max-sm:max-w-xs bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+                <div className="max-w-lg max-sm:max-w-xs bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
                 <a href={`${slide.url}`} target="blank">
                 <Image
                   src={`/${slide.image}`}

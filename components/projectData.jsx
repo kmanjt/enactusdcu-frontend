@@ -7,7 +7,7 @@ export const SliderData = [
         description: 'Public speaking and empowerment workshops'
     },
     {
-        image: 'assets/parkingProtect.jpg',
+        image: 'assets/parkingprotect.jpg',
         name: 'Parking Protect',
         url: '',
         description: 'AI assisted app for easily reporting misuse of disabled parking'
