@@ -17,25 +17,25 @@ const hero = ({ heading, message }) => {
         <TypeAnimation
           sequence={[
             "Enactus DCU is empowerment.", // Types
-            3000, // Waits 3s
+            4000, // Waits 3s
             "Enactus DCU is entrepreneurship.",
-            3000, // Waits 3s
+            4000, // Waits 3s
             "Enactus DCU is leadership.",
-            3000, // Waits 3s
+            4000, // Waits 3s
             "Enactus DCU is empathy.",
-            3000, // Waits 3s
+            4000, // Waits 3s
             "Enactus DCU is experience.",
-            3000, // Waits 3s
+            4000, // Waits 3s
             "Enactus DCU is sustainable positive impact.",
-            3000, // Waits 3s
+            4000, // Waits 3s
             "Enactus DCU is practical skills.",
-            3000,
+            4000,
             () => {
               // Place optional callbacks anywhere in the array
             },
           ]}
           wrapper="p"
-          speed={20}
+          speed={40}
           cursor={true}
           repeat={Infinity}
           className="md:text-xl sm:text-xl text-l pb-5"
