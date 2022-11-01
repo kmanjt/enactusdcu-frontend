@@ -8,12 +8,12 @@ const hero = ({ heading, message }) => {
       className="flex items-center justify-center h-screen bg-fixed bg-center bg-cover custom-img"
     >
       {/* Overlay */}
-      <div className="top-0 left-0 right-0 bottom-0 z-[2]" />
-      <div className="p-5 text-center text-slate-800 ">
-        <h1 className="md:text-7xl sm:text-5xl text-4xl font-bold">
+      <div className='top-0 left-0 right-0 bottom-0 z-[2]' />
+      <div className="p-5 z-[2] text-center">
+        <h1 className="md:text-7xl sm:text-7xl text-6xl font-bold tracking-wide">
           {heading}
         </h1>
-        <p className="py-5 text-xl">{message}</p>
+        <p className="py-5 text-xl font-semibold">{message}</p>
         <TypeAnimation
           sequence={[
             "Enactus DCU is empowerment.", // Types
@@ -38,7 +38,7 @@ const hero = ({ heading, message }) => {
           speed={40}
           cursor={true}
           repeat={Infinity}
-          className="md:text-xl sm:text-xl text-l pb-5"
+          className="md:text-xl sm:text-xl text-l pb-5 font-semibold"
         />
         <div className="py-5 pt-0">
           <button
