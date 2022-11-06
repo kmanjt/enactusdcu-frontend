@@ -60,7 +60,7 @@ export default function Nav() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="bg-transparent pt-5 flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+              <div className="bg-transparent pt-3 flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                   <a href="#home">
                     <Image
