@@ -20,7 +20,9 @@ const Slider = ({ slides }) => {
 
   return (
     <div id="projects" className="mx-auto pt-[9rem] pb-10">
-      <p className="mt-2 text-3xl font-bold leading-8 tracking-tight  pb-10 text-gray-900 sm:text-4xl text-center">Projects</p>
+      <p className="mt-2 text-3xl font-bold leading-8 tracking-wide  pb-10 text-gray-900 sm:text-4xl text-center">
+        Projects
+      </p>
       <div className="relative flex justify-center slide">
         {SliderData.map((slide, index) => {
           return (
@@ -38,41 +40,42 @@ const Slider = ({ slides }) => {
                 size={50}
                 color="black"
               />
-              
+
               {index === current && (
                 <div className="max-w-lg max-sm:max-w-xs bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
-                <a href={`${slide.url}`} target="blank">
-                <Image
-                  src={`/${slide.image}`}
-                  alt="/"
-                  width="1420w"
-                  height="1000h"
-                  objectFit="cover"
-                  className="rounded"
-                />
-                </a>
-                <div className="p-5">
-                      <a href={`${slide.url}`} target="blank">
-                          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{slide.name}</h5>
-                      </a>
-                      <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{slide.description}</p>
+                  <a href={`${slide.url}`} target="blank">
+                    <Image
+                      src={`/${slide.image}`}
+                      alt="/"
+                      width="1420w"
+                      height="1000h"
+                      objectFit="cover"
+                      className="rounded"
+                    />
+                  </a>
+                  <div className="p-5">
+                    <a href={`${slide.url}`} target="blank">
+                      <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        {slide.name}
+                      </h5>
+                    </a>
+                    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                      {slide.description}
+                    </p>
                   </div>
                 </div>
-                
               )}
 
               <FaArrowCircleRight
-              onClick={nextSlide}
+                onClick={nextSlide}
                 className="absolute top-[50%] right-[120px] text-white/70 cursor-pointer select-none z-[2]"
                 size={50}
                 color="black"
               />
-
-              </div>
-            
+            </div>
           );
         })}
-        </div>
+      </div>
     </div>
   );
 };

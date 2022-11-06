@@ -51,7 +51,7 @@ export default function Nav() {
             >
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-zinc-800 hover:bg-amber-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:bg-amber-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -60,16 +60,16 @@ export default function Nav() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="bg-transparent flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+              <div className="bg-transparent pt-5 flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                   <a href="#home">
-                  <Image
-                    src={logo}
-                    width={40}
-                    height={40}
-                    className="block h-8 w-auto lg:hidden"
-                    alt="Logo"
-                  />
+                    <Image
+                      src={logo}
+                      width={50}
+                      height={50}
+                      className="block h-8 w-auto lg:hidden"
+                      alt="Logo"
+                    />
                   </a>
                 </div>
                 <div className="hidden sm:ml-6 sm:block">

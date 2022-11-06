@@ -18,8 +18,11 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Team = () => {
   return (
-    <div id="team" className="w-160 md:w-320 lg:w-400 md:p-24 lg:p-32 mx-auto text-center py-24">
-      <p className="mt-2 text-3xl font-bold leading-8 tracking-tight  pb-10 text-gray-900 sm:text-4xl">
+    <div
+      id="team"
+      className="w-160 md:w-320 lg:w-400 md:p-24 lg:p-32 mx-auto text-center py-24"
+    >
+      <p className="mt-2 text-3xl font-bold leading-8 tracking-wide pb-10 text-gray-900 sm:text-4xl">
         The Enactus DCU Team
       </p>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 p-4">
