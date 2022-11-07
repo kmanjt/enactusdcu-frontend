@@ -3,12 +3,9 @@ import { TypeAnimation } from "react-type-animation";
 
 const hero = ({ heading, message }) => {
   return (
-    <div
-      id="home"
-      className="flex items-center justify-center h-screen bg-fixed bg-center bg-cover custom-img"
-    >
+    <div className="flex items-center justify-center h-screen bg-fixed bg-center bg-cover custom-img">
       {/* Overlay */}
-      <div className='top-0 left-0 right-0 bottom-0 z-[2]' />
+      <div className="top-0 left-0 right-0 bottom-0 z-[2]" />
       <div className="p-5 z-[2] text-center">
         <h1 className="md:text-7xl sm:text-7xl text-6xl font-bold tracking-wide">
           {heading}
@@ -43,7 +40,7 @@ const hero = ({ heading, message }) => {
         <div className="py-5 pt-0">
           <button
             type="button"
-            className="rounded-full bg-amber-400 p-3 text-zinc-900 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+            className="rounded-full bg-amber-400 p-3 text-zinc-900 hover:text-white hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
           >
             <a href="#projects">
               <p>Learn more!</p>

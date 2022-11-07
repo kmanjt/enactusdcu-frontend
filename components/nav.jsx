@@ -2,6 +2,7 @@ import { Fragment, useEffect, useState } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
+import Link from "next/link";
 import logo from "../public/logo.png";
 
 const navigation = [
@@ -62,7 +63,7 @@ export default function Nav() {
               </div>
               <div className="bg-transparent pt-3 flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
-                  <a href="#home">
+                  <Link href="/">
                     <Image
                       src={logo}
                       width={50}
@@ -70,7 +71,7 @@ export default function Nav() {
                       className="block h-8 w-auto lg:hidden"
                       alt="Logo"
                     />
-                  </a>
+                  </Link>
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
@@ -96,7 +97,7 @@ export default function Nav() {
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <button
                   type="button"
-                  className="rounded-full bg-amber-400 p-2 text-zinc-900 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                  className="rounded-full bg-amber-400 p-2 text-zinc-900 hover:text-white hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                 >
                   <a
                     href="https://dcuclubsandsocs.ie/society/enactus"
