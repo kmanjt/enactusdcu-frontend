@@ -9,7 +9,7 @@ export const SliderData = [
     {
         image: 'assets/parkingprotect.jpg',
         name: 'Parking Protect',
-        url: '',
+        url: 'https://parking-protect.com/',
         description: 'AI assisted app for easily reporting misuse of disabled parking'
     },
     {
@@ -21,13 +21,13 @@ export const SliderData = [
     {
         image: 'assets/foodPlanner.png',
         name: 'Food Planner',
-        url: '',
+        url: 'https://www.renu-ireland.com/',
         description: 'Recipe finder for people with certain dietary needs'
     },
     {
         image: 'assets/Buckle.png',
         name: 'Buckle Up',
-        url: '',
+        url: 'https://www.instagram.com/buckleupenterprise/',
         description: 'A sustainable fashion brand, upcycling used tires into fashion accessories'
     },
 ]

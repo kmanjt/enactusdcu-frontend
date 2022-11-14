@@ -42,6 +42,12 @@ export const TeamData = [
     role: "ABLO",
   },
   {
+    image: "/committee/Kiran.png",
+    name: "Kiran Vargaonkar",
+    url: "https://www.linkedin.com/in/kiranvargaonkar/",
+    role: "Recruitment Officer",
+  },
+  {
     image: "/committee/Mahima.png",
     name: "Mahima Arora",
     url: "https://www.linkedin.com/in/mahima-arora/",
@@ -58,6 +64,18 @@ export const TeamData = [
     name: "Klara Tamchynova",
     url: "https://www.linkedin.com/in/klara-tamchynova-3a3782229/",
     role: "Sponsorship Officer",
+  },
+  {
+    image: "/committee/Eva.png",
+    name: "Eva Anino",
+    url: "https://www.linkedin.com/in/eva-m-anino-9a7037257/",
+    role: "Events Officer",
+  },
+  {
+    image: "/committee/Nina.png",
+    name: "Nina Weinberg",
+    url: "https://www.linkedin.com/in/nina-weinberg/",
+    role: "Events Officer",
   },
   {
     image: "/committee/Stephen.png",
