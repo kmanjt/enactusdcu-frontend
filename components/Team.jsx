@@ -35,7 +35,7 @@ const Team = () => {
                 width={"4000w"}
                 height={"6000h"}
                 layout="responsive"
-                className="rounded"
+                className="rounded object-cover"
               />
               {/* Overlay */}
               <a href={team.url} target="blank">
