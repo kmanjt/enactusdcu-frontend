@@ -25,9 +25,9 @@ export const SliderData = [
         description: 'Recipe finder for people with certain dietary needs'
     },
     {
-        image: 'assets/Buckle.png',
-        name: 'Buckle Up',
-        url: 'https://www.instagram.com/buckleupenterprise/',
+        image: 'assets/oftclogo.jpg',
+        name: 'Off The Road Collective',
+        url: 'https://www.instagram.com/offtheroadcollective/',
         description: 'A sustainable fashion brand, upcycling used tires into fashion accessories'
     },
 ]
