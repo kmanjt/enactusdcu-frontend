@@ -15,7 +15,11 @@ export default function Footer() {
     <div className="bg-white p-4 text-black shadow-inner shadow-stone-400/50">
       <div className="grid mt-4 md:grid-cols-12 grid-cols-1 gap-3">
         <motion.div whileHover={{ scale: 1.2 }} className="col-span-4">
-          <a target={"_blank"} href="https://www.enactusdcu.com/">
+          <a
+            target={"_blank"}
+            rel="noreferrer"
+            href="https://www.enactusdcu.com/"
+          >
             <Image
               src={logo}
               width={200}
@@ -65,8 +69,8 @@ export default function Footer() {
                 whileHover={{ scale: 1.1 }}
                 className="hover:text-amber-300 hover:font-bold block"
                 href={item.link}
-                rel="noreferrer"
                 target={"_blank"}
+                rel="noreferrer"
                 key={index}
               >
                 {item.des}
