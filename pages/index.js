@@ -6,6 +6,7 @@ import { SliderData } from '../components/projectData'
 import Slider from '../components/Slider'
 import Team from '../components/Team'
 import Contact from '../components/contact'
+import Footer from '../components/footer'
 
 
 export default function Home() {
@@ -16,12 +17,13 @@ export default function Home() {
         <meta name="description" content="Enactus DCU main website!" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Hero heading='Enactus DCU' message='Enactus DCU is a student led social entrepreneurship society.'/>
-      <div  className="bg-gradient-to-b from-amber-100 to-amber-300">
-      <Slider slides={SliderData} />
-      <Team/>
-      <Contact/>
-    </div>
+      <Hero heading='Enactus DCU' message='Enactus DCU is a student led social entrepreneurship society.' />
+      <div className="bg-gradient-to-b from-amber-100 to-amber-300">
+        <Slider slides={SliderData} />
+        <Team />
+        <Contact />
+        <Footer />
+      </div>
     </div>
   )
 }
